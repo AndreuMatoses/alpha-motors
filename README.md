@@ -1,6 +1,19 @@
 # ALPHA motors 
 Database of tested motors, performance information and dynamic thrust approximations for the [ALPHA project](https://www.kthaero.com/alpha), KTH.
 
+## *Note to contributors*
+
+I would strongly recommend to keep the following structure:
+
+- Data base script, in which we dump all the data from the tests
+- Script/functions to compare motors (this is probably what Jacob and company will do). Could be some convenient tool to compare all entries in the data base and show the best ones , etc...
+- Scripts/functions for dynamic thrust approximation 
+- Scripts of other useful stuff that may be decided in the future
+
+Any change/addition that you may do, please document it in the README.md so anyone that may be new to the repo could use the tool
+
+As of now, committing to the main branch is okay,  however if this repo becomes more significant, the proper workflow would be: Create new issue addressing what wants to be added/corrected -> create branch for said issue -> merge to main request once you finished -> if accepted, becomes part of main.
+
 ## Motor-Propeller Database
 
 The data is stored in a `struct` object, each index (entry) corresponds to a propeller. The required data is:
