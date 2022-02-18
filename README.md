@@ -28,3 +28,15 @@ The input parameters for `dynamic_thrust_1.m` are:
 5. Propeller index to plot `prop_i`
 
 The script `dynamic_thrust_1.m` calculates dynamic thrust for each throttle level added in the data base entry for each propeller in the data base. The plots are only performed on the motor-propeller pair chosen but this could be easily changed if comparison of propellers required.
+
+### Results, half scale, 5x4.3x3 propeller
+
+For the current half scale design and motors (Emax ECO II Series 2207 2400KV, prop 5x4.3x3) at full throttle, the predicted dynamic thrust and form drag is plotted below. the intersection of thrust and drag represents the maximal theoretical speed.
+
+V~max~ = 30 m/s = 108 km/h
+
+The zero-thrust speed is approximately:
+
+V~T=0~ = 51 +- 15.3 m/s
+
+![thrust vs drag](images/dynamic_thrust.png)

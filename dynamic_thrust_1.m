@@ -80,8 +80,8 @@ xlabel('Aircraft speed m/s')
 ylabel('Total Force, N')
 legend('Aircraft Dyn. Thrust',['+' num2str(-(1-prediction_err)*100) '% error'],'Form drag \propto V^2 ')
 grid on
-% title([data(i).name '. Thrust (max) vs Drag at h = ' num2str(hg) ' m, ' num2str(n_motors) ' propellers.' ])
-title(['Thrust (max) vs Drag at h = ' num2str(hg) ' m, ' num2str(n_motors) ' propellers.' ])
+title([data(i).name '. Thrust (max) vs Drag at h = ' num2str(hg) ' m, ' num2str(n_motors) ' propellers.' ])
+% title(['Thrust (max) vs Drag at h = ' num2str(hg) ' m, ' num2str(n_motors) ' propellers.' ])
 ylim([0,max(T_max)*1.1])
 
 
